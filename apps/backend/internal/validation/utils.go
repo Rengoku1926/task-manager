@@ -6,9 +6,9 @@ import (
 	"regexp"
 	"strings"
 
+	"github.com/Rengoku1926/tasker/internal/errs"
 	"github.com/go-playground/validator/v10"
 	"github.com/labstack/echo/v4"
-	"github.com/sriniously/go-boilerplate/internal/errs"
 )
 
 type Validatable interface {
