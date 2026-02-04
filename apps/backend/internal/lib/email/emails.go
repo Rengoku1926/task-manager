@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/google/uuid"
 	"github.com/Rengoku1926/tasker/internal/model/todo"
+	"github.com/google/uuid"
 )
 
 func (c *Client) SendWelcomeEmail(to, firstName string) error {
@@ -15,7 +15,7 @@ func (c *Client) SendWelcomeEmail(to, firstName string) error {
 
 	return c.SendEmail(
 		to,
-		"Welcome to Boilerplate!",
+		"Welcome to tasker!",
 		TemplateWelcome,
 		data,
 	)
